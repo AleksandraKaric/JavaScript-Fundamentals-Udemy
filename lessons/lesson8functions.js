@@ -43,10 +43,10 @@ console.log(newResult)
 
 // import function - omogućava uvoženje funkcije iz drugih fajlova, obavezno ta funkcija mora imati key word EXPORT/ u package.json mora biti podešen type : module
 
-import { printAge } from "./hellpers/printHelper.js"
+import { printAge } from "../hellpers/printHelper.js"
 printAge(5)
 
 // import everything - uvodimo kao objekat koji posle koristimo za pozivanje funkcija nakon tačke
 
-import * as helper from "./hellpers/printHelper.js" // ceo fajl je uvezen kao objekat, koji poziva dostupne funkcije sa tačkom
+import * as helper from "../hellpers/printHelper.js" // ceo fajl je uvezen kao objekat, koji poziva dostupne funkcije sa tačkom
 helper.printAge(10)
